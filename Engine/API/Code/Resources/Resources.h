@@ -1,0 +1,13 @@
+#pragma once
+
+#include <memory>
+
+////////////////////////////////////////////////////////////
+/// \defgroup resources Resources
+///
+/// Resource management (textures, shaders, ...)
+/// 
+////////////////////////////////////////////////////////////
+
+#include "Resource/Resource.h"
+#include "ResourcesManager.h"

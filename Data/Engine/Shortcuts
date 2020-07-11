@@ -1,0 +1,18 @@
+Orbiter autour d'un objet : 
+- Le selection dans outliner
+- Appuyer sur la touche "F"
+
+Pour arreter d'orbiter autour d'un objet : 
+- Appuyer sur Shift gauche en même temps que la touche F
+( La camera repassera en mode FPS )
+
+Tourner la camera :
+- Appuyer sur Shift gauche et bouger la souris en maintenant le clique gauche enfoncé.
+
+Bouger la camera en mode Orbit :
+- Appuyer sur Shift gauche et bouger la souris en maintenant le clique droit ou milieu enfoncé.
+( Uniquement le movement dans l'axe de la camera est disponible dans ce mode )
+
+Bouger la camera dans les autres modes :
+- Appuyer sur Shift gauche et bouger la souris en maintenant le clique droit enfoncé pour bouger sur les cotés et en hauteur.
+- Appuyer sur Shift gauche et bouger la souris en maintenant le clique milieu enfoncé pour bouger sur l'axe de la camera.
