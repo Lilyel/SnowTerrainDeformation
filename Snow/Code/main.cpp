@@ -24,6 +24,7 @@ int main()
 
 	ae::Window MyWindow;
 	MyWindow.Create();
+	MyWindow.SetWindowTitle( "Snow Demo" );
 
 	ae::CameraPerspective Camera;
 	Camera.SetName( "Camera" );
