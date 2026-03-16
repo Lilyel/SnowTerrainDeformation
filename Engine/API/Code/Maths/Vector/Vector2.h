@@ -557,7 +557,7 @@ namespace ae
     /// <summary>
     /// Convert a vector 2D to a string.
     /// </summary>
-    /// <param name="_Color">Vector 2D to convert.</param>
+    /// <param name="_Vector">Vector 2D to convert.</param>
     /// <returns>Vector 2D as a C++ string. ( Format : X = ...   Y = ... ).</returns>
     AERO_CORE_EXPORT inline std::string ToString( const ae::Vector2& _Vector );
 

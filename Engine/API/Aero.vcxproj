@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\Aero\Aero.cpp" />
+    <ClCompile Include="Code\Application\Application.cpp" />
+    <ClCompile Include="Code\Debugging\Dependencies\loguru.cpp" />
+    <ClCompile Include="Code\Editor\Editor.cpp" />
+    <ClCompile Include="Code\Graphics\AssimpHelper\AssimpHelper.cpp" />
+    <ClCompile Include="Code\Graphics\BlendMode\BlendMode.cpp" />
+    <ClCompile Include="Code\Graphics\Camera\Camera.cpp" />
+    <ClCompile Include="Code\Graphics\Camera\CameraOrthographic.cpp" />
+    <ClCompile Include="Code\Graphics\Camera\CameraPerspective.cpp" />
+    <ClCompile Include="Code\Graphics\Color\Color.cpp" />
+    <ClCompile Include="Code\Graphics\Context\Context.cpp" />
+    <ClCompile Include="Code\Graphics\CubeMap\CubeMap.cpp" />
+    <ClCompile Include="Code\Graphics\CubeMap\CubeMapImage.cpp" />
+    <ClCompile Include="Code\Graphics\Drawable\Drawable.cpp" />
+    <ClCompile Include="Code\Graphics\Drawable\TransformableDrawable2D.cpp" />
+    <ClCompile Include="Code\Graphics\Drawable\TransformableDrawable3D.cpp" />
+    <ClCompile Include="Code\Graphics\Framebuffer\Attachement\FramebufferAttachement.cpp" />
+    <ClCompile Include="Code\Graphics\Framebuffer\Framebuffer.cpp" />
+    <ClCompile Include="Code\Graphics\Framebuffer\FramebufferSprite.cpp" />
+    <ClCompile Include="Code\Graphics\ImageBasedLighting\ImageBasedLighting.cpp" />
+    <ClCompile Include="Code\Graphics\Image\Image.cpp" />
+    <ClCompile Include="Code\Graphics\Image\ImageBase.cpp" />
+    <ClCompile Include="Code\Graphics\Image\ImageHDR.cpp" />
+    <ClCompile Include="Code\Graphics\Light\DirectionalLight\DirectionalLight.cpp" />
+    <ClCompile Include="Code\Graphics\Light\Light.cpp" />
+    <ClCompile Include="Code\Graphics\Light\PointLight\PointLight.cpp" />
+    <ClCompile Include="Code\Graphics\Light\SpotLight\SpotLight.cpp" />
+    <ClCompile Include="Code\Graphics\Material\BlinnPhongMaterial.cpp" />
+    <ClCompile Include="Code\Graphics\Material\CookTorranceMaterial.cpp" />
+    <ClCompile Include="Code\Graphics\Material\CurveMaterial.cpp" />
+    <ClCompile Include="Code\Graphics\Material\FramebufferMaterial.cpp" />
+    <ClCompile Include="Code\Graphics\Material\Material.cpp" />
+    <ClCompile Include="Code\Graphics\Material\SkyboxMaterial.cpp" />
+    <ClCompile Include="Code\Graphics\Material\SpriteMaterial.cpp" />
+    <ClCompile Include="Code\Graphics\Material\ToonMaterial.cpp" />
+    <ClCompile Include="Code\Graphics\Mesh\2D\FullscreenQuadMesh.cpp" />
+    <ClCompile Include="Code\Graphics\Mesh\2D\Mesh2D.cpp" />
+    <ClCompile Include="Code\Graphics\Mesh\3D\Mesh3D.cpp" />
+    <ClCompile Include="Code\Graphics\Mesh\3D\CurveMesh.cpp" />
+    <ClCompile Include="Code\Graphics\PostProcess\Bloom.cpp" />
+    <ClCompile Include="Code\Graphics\PostProcess\GammaCorrection.cpp" />
+    <ClCompile Include="Code\Graphics\PostProcess\GaussianBlur.cpp" />
+    <ClCompile Include="Code\Graphics\Renderer\Renderer.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\Shader.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameter.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterBool.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterColor.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterCubeMap.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterCubeMapBool.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterFloat.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterInt.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterMatrix3x3.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterMatrix4x4.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterTexture.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterTextureBool.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterVector2.cpp" />
+    <ClCompile Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterVector3.cpp" />
+    <ClCompile Include="Code\Graphics\ShadowMap\ShadowMap.cpp" />
+    <ClCompile Include="Code\Graphics\Mesh\2D\QuadMesh.cpp" />
+    <ClCompile Include="Code\Graphics\Mesh\3D\CubeMesh.cpp" />
+    <ClCompile Include="Code\Graphics\Mesh\3D\PlaneMesh.cpp" />
+    <ClCompile Include="Code\Graphics\Mesh\3D\SphereMesh.cpp" />
+    <ClCompile Include="Code\Graphics\Skybox\Skybox.cpp" />
+    <ClCompile Include="Code\Graphics\Sprite\Sprite.cpp" />
+    <ClCompile Include="Code\Graphics\STBImageHelper\STBImageHelper.cpp" />
+    <ClCompile Include="Code\Graphics\Texture\Texture.cpp" />
+    <ClCompile Include="Code\Graphics\Texture\Texture1D.cpp" />
+    <ClCompile Include="Code\Graphics\Texture\Texture1DArray.cpp" />
+    <ClCompile Include="Code\Graphics\Texture\Texture2D.cpp" />
+    <ClCompile Include="Code\Graphics\Texture\Texture2DArray.cpp" />
+    <ClCompile Include="Code\Graphics\Texture\Texture2DRect.cpp" />
+    <ClCompile Include="Code\Graphics\Texture\Texture3D.cpp" />
+    <ClCompile Include="Code\Graphics\Texture\TextureImage.cpp" />
+    <ClCompile Include="Code\Graphics\Texture\TextureMultisample.cpp" />
+    <ClCompile Include="Code\Graphics\Texture\TexturePixelFormat.cpp" />
+    <ClCompile Include="Code\Graphics\Vertex\Vertex3D.cpp" />
+    <ClCompile Include="Code\Graphics\Vertex\Vertex2D.cpp" />
+    <ClCompile Include="Code\Graphics\Window\Window.cpp" />
+    <ClCompile Include="Code\Input\InputFunctionalities\InputFunctionalities.cpp" />
+    <ClCompile Include="Code\Input\InputFunctionalities\Windows\WinInputFunctionalities.cpp" />
+    <ClCompile Include="Code\Input\InputManager\InputManager.cpp" />
+    <ClCompile Include="Code\Input\Keys\Keys.cpp" />
+    <ClCompile Include="Code\Input\Keys\KeyState.cpp" />
+    <ClCompile Include="Code\main.cpp" />
+    <ClCompile Include="Code\Maths\Curve\Curve.cpp" />
+    <ClCompile Include="Code\Maths\Curve\CurveHermite.cpp" />
+    <ClCompile Include="Code\Maths\Curve\CurveKochanekBartels.cpp" />
+    <ClCompile Include="Code\Maths\Curve\CurveLinear.cpp" />
+    <ClCompile Include="Code\Maths\Functions\IntersectionFunctions.cpp" />
+    <ClCompile Include="Code\Maths\Matrix\Matrix3x3.cpp" />
+    <ClCompile Include="Code\Maths\Matrix\Matrix4x4.cpp" />
+    <ClCompile Include="Code\Maths\Primitives\Line.cpp" />
+    <ClCompile Include="Code\Maths\Primitives\Plane.cpp" />
+    <ClCompile Include="Code\Maths\Primitives\Sphere.cpp" />
+    <ClCompile Include="Code\Maths\Primitives\Triangle.cpp" />
+    <ClCompile Include="Code\Maths\Quaternion\Quaternion.cpp" />
+    <ClCompile Include="Code\Maths\Rotator\Rotator.cpp" />
+    <ClCompile Include="Code\Maths\Transform\Transform.cpp" />
+    <ClCompile Include="Code\Maths\Transform\Transform2D.cpp" />
+    <ClCompile Include="Code\Maths\Vector\Vector2.cpp" />
+    <ClCompile Include="Code\Maths\Vector\Vector3.cpp" />
+    <ClCompile Include="Code\Maths\Vector\VectorToolbox.cpp" />
+    <ClCompile Include="Code\Physics\Collider\Collider.cpp" />
+    <ClCompile Include="Code\Physics\PhysicObject\PhysicObject.cpp" />
+    <ClCompile Include="Code\Physics\Simulator\PhysicsSimulator.cpp" />
+    <ClCompile Include="Code\Resources\ResourcesManager.cpp" />
+    <ClCompile Include="Code\Resources\Resource\Resource.cpp" />
+    <ClCompile Include="Code\TimeManagement\Date\Date.cpp" />
+    <ClCompile Include="Code\TimeManagement\Time\Time.cpp" />
+    <ClCompile Include="Code\Debugging\Error\Error.cpp" />
+    <ClCompile Include="Code\Debugging\Log\Log.cpp" />
+    <ClCompile Include="Code\UI\Dependencies\imgui.cpp" />
+    <ClCompile Include="Code\UI\Dependencies\ImGuizmo.cpp" />
+    <ClCompile Include="Code\UI\Dependencies\imgui_draw.cpp" />
+    <ClCompile Include="Code\UI\Dependencies\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Code\UI\Dependencies\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Code\UI\Dependencies\imgui_stdlib.cpp" />
+    <ClCompile Include="Code\UI\Dependencies\imgui_widgets.cpp" />
+    <ClCompile Include="Code\UI\Dependencies\IncludeImGui.cpp" />
+    <ClCompile Include="Code\UI\UI.cpp" />
+    <ClCompile Include="Code\World\World.cpp" />
+    <ClCompile Include="Code\World\WorldObject\WorldObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Aero\Aero.h" />
+    <ClInclude Include="Code\Application\Application.h" />
+    <ClInclude Include="Code\Debugging\Debugging.h" />
+    <ClInclude Include="Code\Debugging\Dependencies\loguru.hpp" />
+    <ClInclude Include="Code\Documentation\DoxygenMainPage.h" />
+    <ClInclude Include="Code\Editor\CurveEditor\CurveEditor.h" />
+    <ClInclude Include="Code\Editor\CurveEditor\CurveEditorHelper.h" />
+    <ClInclude Include="Code\Editor\Editor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\BloomToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\CameraToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ColorToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\CubeMapToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\CubeMeshToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\CurveMeshToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\FramebufferToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\GammaCorrectionToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\GaussianBlurToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ImageToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\LightToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\MaterialToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\PhysicObjectToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\PhysicsSettingsToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\PlaneMeshToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\PointLightToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\QuadMeshToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ResourceToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShaderParameterBoolToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShaderParameterColorToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShaderParameterFloatToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShaderParameterIntToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShaderParameterMatrix3x3ToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShaderParameterMatrix4x4ToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShaderParameterToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShaderParameterVector2ToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShaderParameterVector3ToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShaderToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\ShadowMapToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\SkyboxToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\SphereMeshToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\SpotLightToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\SpriteToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\TextureToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\Transform2DToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\TransformToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\WorldObjectToEditor.h" />
+    <ClInclude Include="Code\Editor\TypesToEditor\WorldToEditor.h" />
+    <ClInclude Include="Code\Graphics\AssimpHelper\AssimpHelper.h" />
+    <ClInclude Include="Code\Graphics\BlendMode\BlendFactor.h" />
+    <ClInclude Include="Code\Graphics\BlendMode\BlendMode.h" />
+    <ClInclude Include="Code\Graphics\Camera\Camera.h" />
+    <ClInclude Include="Code\Graphics\Camera\CameraOrthographic.h" />
+    <ClInclude Include="Code\Graphics\Camera\CameraPerspective.h" />
+    <ClInclude Include="Code\Graphics\Color\Color.h" />
+    <ClInclude Include="Code\Graphics\Context\Context.h" />
+    <ClInclude Include="Code\Graphics\CubeMap\CubeMap.h" />
+    <ClInclude Include="Code\Graphics\CubeMap\CubeMapImage.h" />
+    <ClInclude Include="Code\Graphics\CullingMode\CullingMode.h" />
+    <ClInclude Include="Code\Graphics\Dependencies\GLFW.h" />
+    <ClInclude Include="Code\Graphics\Dependencies\OpenGL.h" />
+    <ClInclude Include="Code\Graphics\DepthMode\DepthMode.h" />
+    <ClInclude Include="Code\Graphics\Drawable\Drawable.h" />
+    <ClInclude Include="Code\Graphics\Drawable\TransformableDrawable2D.h" />
+    <ClInclude Include="Code\Graphics\Drawable\TransformableDrawable3D.h" />
+    <ClInclude Include="Code\Graphics\DrawMode\DrawMode.h" />
+    <ClInclude Include="Code\Graphics\Framebuffer\Attachement\FramebufferAttachement.h" />
+    <ClInclude Include="Code\Graphics\Framebuffer\Framebuffer.h" />
+    <ClInclude Include="Code\Graphics\Framebuffer\FramebufferSprite.h" />
+    <ClInclude Include="Code\Graphics\Graphics.h" />
+    <ClInclude Include="Code\Graphics\ImageBasedLighting\ImageBasedLighting.h" />
+    <ClInclude Include="Code\Graphics\Image\Image.h" />
+    <ClInclude Include="Code\Graphics\Image\ImageBase.h" />
+    <ClInclude Include="Code\Graphics\Image\ImageFormat.h" />
+    <ClInclude Include="Code\Graphics\Image\ImageHDR.h" />
+    <ClInclude Include="Code\Graphics\Image\ImageResizeFilter.h" />
+    <ClInclude Include="Code\Graphics\Light\DirectionalLight\DirectionalLight.h" />
+    <ClInclude Include="Code\Graphics\Light\Light.h" />
+    <ClInclude Include="Code\Graphics\Light\Lights.h" />
+    <ClInclude Include="Code\Graphics\Light\PointLight\PointLight.h" />
+    <ClInclude Include="Code\Graphics\Light\SpotLight\SpotLight.h" />
+    <ClInclude Include="Code\Graphics\Material\BlinnPhongMaterial.h" />
+    <ClInclude Include="Code\Graphics\Material\CookTorranceMaterial.h" />
+    <ClInclude Include="Code\Graphics\Material\CurveMaterial.h" />
+    <ClInclude Include="Code\Graphics\Material\FramebufferMaterial.h" />
+    <ClInclude Include="Code\Graphics\Material\Material.h" />
+    <ClInclude Include="Code\Graphics\Material\SkyboxMaterial.h" />
+    <ClInclude Include="Code\Graphics\Material\SpriteMaterial.h" />
+    <ClInclude Include="Code\Graphics\Material\ToonMaterial.h" />
+    <ClInclude Include="Code\Graphics\Mesh\2D\FullscreenQuadMesh.h" />
+    <ClInclude Include="Code\Graphics\Mesh\2D\Mesh2D.h" />
+    <ClInclude Include="Code\Graphics\Mesh\3D\Mesh3D.h" />
+    <ClInclude Include="Code\Graphics\Mesh\3D\CurveMesh.h" />
+    <ClInclude Include="Code\Graphics\PostProcess\Bloom.h" />
+    <ClInclude Include="Code\Graphics\PostProcess\GammaCorrection.h" />
+    <ClInclude Include="Code\Graphics\PostProcess\GaussianBlur.h" />
+    <ClInclude Include="Code\Graphics\Primitives\PrimitivesType.h" />
+    <ClInclude Include="Code\Graphics\Renderer\Renderer.h" />
+    <ClInclude Include="Code\Graphics\Shader\Shader.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameter.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterBool.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterColor.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterCubeMapBool.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterTextureBool.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterCubeMap.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterFloat.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterInt.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterMatrix3x3.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterMatrix4x4.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterTexture.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterVector2.h" />
+    <ClInclude Include="Code\Graphics\Shader\ShaderParameter\ShaderParameterVector3.h" />
+    <ClInclude Include="Code\Graphics\ShadowMap\ShadowMap.h" />
+    <ClInclude Include="Code\Graphics\Mesh\2D\QuadMesh.h" />
+    <ClInclude Include="Code\Graphics\Mesh\3D\CubeMesh.h" />
+    <ClInclude Include="Code\Graphics\Mesh\3D\PlaneMesh.h" />
+    <ClInclude Include="Code\Graphics\Mesh\3D\SphereMesh.h" />
+    <ClInclude Include="Code\Graphics\Skybox\Skybox.h" />
+    <ClInclude Include="Code\Graphics\Sprite\Sprite.h" />
+    <ClInclude Include="Code\Graphics\STBImageHelper\STBImageHelper.h" />
+    <ClInclude Include="Code\Graphics\Texture\Texture1D.h" />
+    <ClInclude Include="Code\Graphics\Texture\Texture1DArray.h" />
+    <ClInclude Include="Code\Graphics\Texture\Texture2D.h" />
+    <ClInclude Include="Code\Graphics\Texture\Texture2DArray.h" />
+    <ClInclude Include="Code\Graphics\Texture\Texture2DRect.h" />
+    <ClInclude Include="Code\Graphics\Texture\Texture3D.h" />
+    <ClInclude Include="Code\Graphics\Texture\TextureImage.h" />
+    <ClInclude Include="Code\Graphics\Texture\Texture.h" />
+    <ClInclude Include="Code\Graphics\Texture\TextureDimension.h" />
+    <ClInclude Include="Code\Graphics\Texture\TextureFilterMode.h" />
+    <ClInclude Include="Code\Graphics\Texture\TextureImageBindMode.h" />
+    <ClInclude Include="Code\Graphics\Texture\TextureMultisample.h" />
+    <ClInclude Include="Code\Graphics\Texture\TexturePixelFormat.h" />
+    <ClInclude Include="Code\Graphics\Texture\TextureWrapMode.h" />
+    <ClInclude Include="Code\Graphics\Vertex\Vertex3D.h" />
+    <ClInclude Include="Code\Graphics\Vertex\Vertex2D.h" />
+    <ClInclude Include="Code\Graphics\Vertex\VertexArray.h" />
+    <ClInclude Include="Code\Graphics\Window\Window.h" />
+    <ClInclude Include="Code\Idioms\Idioms.h" />
+    <ClInclude Include="Code\Includes.h" />
+    <ClInclude Include="Code\Input\Input.h" />
+    <ClInclude Include="Code\Input\InputFunctionalities\InputFunctionalities.h" />
+    <ClInclude Include="Code\Input\InputFunctionalities\Windows\WinInputFunctionalities.h" />
+    <ClInclude Include="Code\Input\InputManager\InputManager.h" />
+    <ClInclude Include="Code\Input\Keys\Keys.h" />
+    <ClInclude Include="Code\Input\Keys\KeyState.h" />
+    <ClInclude Include="Code\Maths\Curve\Curve.h" />
+    <ClInclude Include="Code\Maths\Curve\CurveHermite.h" />
+    <ClInclude Include="Code\Maths\Curve\CurveKochanekBartels.h" />
+    <ClInclude Include="Code\Maths\Curve\CurveLinear.h" />
+    <ClInclude Include="Code\Maths\Functions\MathsFunctions.h" />
+    <ClInclude Include="Code\Maths\Matrix\Matrices.h" />
+    <ClInclude Include="Code\Maths\Matrix\Matrix3x3.h" />
+    <ClInclude Include="Code\Maths\Matrix\MatrixToolbox.h" />
+    <ClInclude Include="Code\Maths\Matrix\Matrix4x4.h" />
+    <ClInclude Include="Code\Maths\Primitives\Line.h" />
+    <ClInclude Include="Code\Maths\Primitives\Plane.h" />
+    <ClInclude Include="Code\Maths\Primitives\Sphere.h" />
+    <ClInclude Include="Code\Maths\Primitives\TRect.h" />
+    <ClInclude Include="Code\Maths\Primitives\Triangle.h" />
+    <ClInclude Include="Code\Maths\Quaternion\Quaternion.h" />
+    <ClInclude Include="Code\Maths\Rotator\Rotator.h" />
+    <ClInclude Include="Code\Maths\Transform\Transform.h" />
+    <ClInclude Include="Code\Maths\Transform\Transform2D.h" />
+    <ClInclude Include="Code\Maths\Vector\Vector2.h" />
+    <ClInclude Include="Code\Maths\Vector\Vector3.h" />
+    <ClInclude Include="Code\Maths\Vector\VectorToolbox.h" />
+    <ClInclude Include="Code\Physics\Collider\Collider.h" />
+    <ClInclude Include="Code\Maths\Functions\IntersectionFunctions.h" />
+    <ClInclude Include="Code\Physics\HitResult\HitResult.h" />
+    <ClInclude Include="Code\Physics\PhysicObject\PhysicObject.h" />
+    <ClInclude Include="Code\Physics\Physics.h" />
+    <ClInclude Include="Code\Physics\Settings\PhysicsSettings.h" />
+    <ClInclude Include="Code\Physics\Simulator\PhysicsSimulator.h" />
+    <ClInclude Include="Code\Resources\Resources.h" />
+    <ClInclude Include="Code\Resources\ResourcesManager.h" />
+    <ClInclude Include="Code\Resources\Resource\Resource.h" />
+    <ClInclude Include="Code\TimeManagement\Date\Date.h" />
+    <ClInclude Include="Code\TimeManagement\Time\Time.h" />
+    <ClInclude Include="Code\TimeManagement\TimeManagement.h" />
+    <ClInclude Include="Code\Debugging\Error\Error.h" />
+    <ClInclude Include="Code\Toolbox\BitOperations\BitOperations.h" />
+    <ClInclude Include="Code\Toolbox\Dependencies.h" />
+    <ClInclude Include="Code\Toolbox\Export.h" />
+    <ClInclude Include="Code\Maths\Maths.h" />
+    <ClInclude Include="Code\Idioms\NotCopiable\NotCopiable.h" />
+    <ClInclude Include="Code\Debugging\Log\Log.h" />
+    <ClInclude Include="Code\Toolbox\Platform.h" />
+    <ClInclude Include="Code\Toolbox\PoolUniqueID\PoolUniqueID.h" />
+    <ClInclude Include="Code\Toolbox\Toolbox.h" />
+    <ClInclude Include="Code\Toolbox\Types.h" />
+    <ClInclude Include="Code\Toolbox\Warning.h" />
+    <ClInclude Include="Code\UI\Dependencies\imconfig.h" />
+    <ClInclude Include="Code\UI\Dependencies\imgui.h" />
+    <ClInclude Include="Code\UI\Dependencies\ImGuizmo.h" />
+    <ClInclude Include="Code\UI\Dependencies\imgui_impl_glfw.h" />
+    <ClInclude Include="Code\UI\Dependencies\imgui_impl_opengl3.h" />
+    <ClInclude Include="Code\UI\Dependencies\imgui_internal.h" />
+    <ClInclude Include="Code\UI\Dependencies\imgui_stdlib.h" />
+    <ClInclude Include="Code\UI\Dependencies\imstb_rectpack.h" />
+    <ClInclude Include="Code\UI\Dependencies\imstb_textedit.h" />
+    <ClInclude Include="Code\UI\Dependencies\imstb_truetype.h" />
+    <ClInclude Include="Code\UI\Dependencies\IncludeImGui.h" />
+    <ClInclude Include="Code\UI\UI.h" />
+    <ClInclude Include="Code\World\World.h" />
+    <ClInclude Include="Code\World\WorldObject\WorldObject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Code\Maths\Primitives\TRect.inl" />
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8C1A595C-D547-4BAD-9B1B-D0323D2910B5}</ProjectGuid>
+    <RootNamespace>Aero</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Binaries\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>AERO_DLL_EXPORT;VK_USE_PLATFORM_WIN32_KHR;VK_PROTOTYPES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Libraries\GLFW\Includes\;$(SolutionDir)Engine\Libraries\Assimp\Includes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DisableSpecificWarnings>26495</DisableSpecificWarnings>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Engine\Libraries\Glew\Libraries\$(Platform)\$(Configuration)\;$(SolutionDir)Engine\Libraries\GLFW\Libraries\$(Platform)\$(Configuration)\;$(SolutionDir)Engine\Libraries\Assimp\Libraries\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Glu32.lib;Dbghelp.lib;glew32.lib;glfw3dll.lib;assimp-vc142-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Xdcmake>
+      <OutputFile>$(SolutionDir)Documentation\Aero API\AeroXmls\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <PreBuildEvent>
+      <Command>call cd "$(SolutionDir)Scripts"
+call "$(SolutionDir)Scripts\UpdateDependencies_VS.bat" "$(Platform)" "$(Configuration)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>AERO_DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Libraries\GLFW\Includes\;$(SolutionDir)Engine\Libraries\Assimp\Includes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DisableSpecificWarnings>26495</DisableSpecificWarnings>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Engine\Libraries\Glew\Libraries\$(Platform)\$(Configuration)\;$(SolutionDir)Engine\Libraries\GLFW\Libraries\$(Platform)\$(Configuration)\;$(SolutionDir)Engine\Libraries\Assimp\Libraries\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Glu32.lib;Dbghelp.lib;glew32.lib;glfw3dll.lib;assimp-vc142-mtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Xdcmake>
+      <OutputFile>$(SolutionDir)Documentation\Aero API\AeroXmls\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <PreBuildEvent>
+      <Command>call cd "$(SolutionDir)Scripts"
+call "$(SolutionDir)Scripts\UpdateDependencies_VS.bat" "$(Platform)" "$(Configuration)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>AERO_DLL_EXPORT;VK_USE_PLATFORM_WIN32_KHR;VK_PROTOTYPES;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Libraries\GLFW\Includes\;$(SolutionDir)Engine\Libraries\Assimp\Includes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DisableSpecificWarnings>26495</DisableSpecificWarnings>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Engine\Libraries\Glew\Libraries\$(Platform)\$(Configuration)\;$(SolutionDir)Engine\Libraries\GLFW\Libraries\$(Platform)\$(Configuration)\;$(SolutionDir)Engine\Libraries\Assimp\Libraries\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Glu32.lib;Dbghelp.lib;glew32.lib;glfw3dll.lib;assimp-vc142-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Xdcmake>
+      <OutputFile>$(SolutionDir)Documentation\Aero API\AeroXmls\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <PreBuildEvent>
+      <Command>call cd "$(SolutionDir)Scripts"
+call "$(SolutionDir)Scripts\UpdateDependencies_VS.bat" "$(Platform)" "$(Configuration)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>AERO_DLL_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\Libraries\GLFW\Includes\;$(SolutionDir)Engine\Libraries\Assimp\Includes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <GenerateXMLDocumentationFiles>false</GenerateXMLDocumentationFiles>
+      <CompileAsManaged>false</CompileAsManaged>
+      <DisableSpecificWarnings>26495</DisableSpecificWarnings>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)Engine\Libraries\Glew\Libraries\$(Platform)\$(Configuration)\;$(SolutionDir)Engine\Libraries\GLFW\Libraries\$(Platform)\$(Configuration)\;$(SolutionDir)Engine\Libraries\Assimp\Libraries\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Glu32.lib;Dbghelp.lib;glew32.lib;glfw3dll.lib;assimp-vc142-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Xdcmake>
+      <OutputFile>$(SolutionDir)Documentation\Aero API\AeroXmls\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <PreBuildEvent>
+      <Command>call cd "$(SolutionDir)Scripts"
+call "$(SolutionDir)Scripts\UpdateDependencies_VS.bat" "$(Platform)" "$(Configuration)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

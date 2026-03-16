@@ -186,5 +186,16 @@ namespace ae
 		Bool m_UpdateTransform;
 	};
 
+
+	/// <summary>Convert a transform 2D to a string.</summary>
+	/// <param name="_Transform">Transform 2D to convert.</param>
+	/// <returns>Transform 2D as a C++ string. ( Format : t : x x\nr : x\ns : x x ).</returns>
+	AERO_CORE_EXPORT std::string ToString( const Transform2D& _Transform2D );
+
 } // ae
 
+/// <summary>Convert a transform 2D to a string and push it in the out stream.</summary>
+/// <param name="os">Output stream.</param>
+/// <param name="_Transform">Transform 2D to convert and push to the out stream.</param>
+/// <returns>Out stream.</returns>
+AERO_CORE_EXPORT std::ostream& operator<<( std::ostream& os, const ae::Transform2D& _Transform2D );

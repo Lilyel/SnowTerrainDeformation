@@ -275,3 +275,6 @@ __pycache__/
 
 # Don't ignore Data/ OBJ files since they could be 3D files.
 !Data/**/*.obj
+Scripts/VSCall_useless.txt
+Scripts/UpdateEngineLibs_useless.bat
+Scripts/UpdateEngineDatas_useless.bat

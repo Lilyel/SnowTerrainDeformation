@@ -229,4 +229,17 @@ namespace ae
         Bool m_UpdateTransform;
     };
 
+
+    /// <summary>Convert a transform to a string. Rotation is shown as euler angles.</summary>
+    /// <param name="_Transform">Transform to convert.</param>
+    /// <returns>Transform as a C++ string. ( Format : t : x x x\nr : x x x\ns : x x x ).</returns>
+    AERO_CORE_EXPORT std::string ToString( const Transform& _Transform );
+
 } // ae
+
+/// <summary>Convert a transform to a string and push it in the out stream. Rotation is shown as euler angles.</summary>
+/// <param name="os">Output stream.</param>
+/// <param name="_Transform">Transform to convert and push to the out stream.</param>
+/// <returns>Out stream.</returns>
+AERO_CORE_EXPORT std::ostream& operator<<( std::ostream& os, const ae::Transform& _Transform );
+

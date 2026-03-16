@@ -18,6 +18,8 @@ struct GLFWwindow;
 
 namespace ae
 {
+    class Image;
+
     /// \ingroup graphics
     /// <summary>
     /// Style applied to the window.
@@ -145,6 +147,25 @@ namespace ae
         const std::string& GetWindowTitle() const;
 
         
+        /// <summary>Set the window position.</summary>
+        /// <param name="_X">The new X coordinate.</param>
+        /// <param name="_Y">The new Y coordinate.</param>
+        void SetWindowPosition( const Int32 _X, const Int32 _Y );
+
+        /// <summary>Set the window position.</summary>
+        /// <param name="_Position">The new position. The floating value will be truncated to get integer coordinates.</param>
+        void SetWindowPosition( const Vector2& _Position );
+
+
+        /// <summary>Retrieve the window coordinates.</summary>
+        /// <param name="_X">The X coordinate of the window.</param>
+        /// <param name="_Y">The Y coordinate of the window.</param>
+        void GetWindowPosition( AE_Out Int32& _X, AE_Out Int32& _Y ) const;
+
+        /// <summary>Retrieve the window position.</summary>
+        /// <returns>The window position.</returns>
+        Vector2 GetWindowPosition() const;
+
         /// <summary>Set frame rate limit.</summary>
         /// <param name="_FrameRate">Target frame rate.</param>
         void SetFrameRate( Int8 _FrameRate );
@@ -180,6 +201,14 @@ namespace ae
         FloatRect GetWindowRect() const;
 
 
+        /// <summary>
+        /// Set the window icon.<para/>
+        /// Image is expected to be non-premultiplied RGBA.
+        /// </summary>
+        /// <param name="_Icon">Image to use as window icon.</param>
+        void SetWindowIcon( const Image& _Icon );
+
+
         /// <summary>Convert a screen position to a position relative to the window.</summary>
         /// <param name="_Position">Position to convert.</param>
         /// <returns>Position converted.</returns>
@@ -206,6 +235,23 @@ namespace ae
         /// The focus is not imediatly retrieved, you must check after witth HasFocus.
         /// </summary>
         void RequestFocus() const;
+
+
+        /// <summary>
+        /// Iconify the window.<para/>
+        /// Use Restore() to undo.
+        /// </summary>
+        void Iconify() const;
+
+        /// <summary>
+        /// Maximize the window.<para/>
+        /// Use Restore() to undo.
+        /// </summary>
+        void Maximize() const;
+
+        /// <summary>Restore an iconified or maximized window.</summary>
+        void Restore() const;
+
 
         /// <summary>Retrieve the GLFW window.</summary>
         /// <returns>GLFW window.</returns>

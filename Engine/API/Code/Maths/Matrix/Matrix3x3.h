@@ -720,16 +720,15 @@ namespace ae
     /// <summary>
     /// Convert a matrix 3x3 to a string.
     /// </summary>
-    /// <param name="_Color">Matrix 3x3 to convert.</param>
+    /// <param name="_Matrix">Matrix 3x3 to convert.</param>
     /// <returns>Matrix 3x3 as a C++ string. ( Format :  x x x\nx x x\nx x x ).</returns>
     AERO_CORE_EXPORT  std::string ToString( const Matrix3x3& _Matrix );
 
 } // ae
 
-/// <summary>
-/// Convert a matrix 3x3 to a string and push it in the out stream.
-/// </summary>
-/// <param name="_Color">Matrix 3x3 to convert and push to the out stream.</param>
+/// <summary>Convert a matrix 3x3 to a string and push it in the out stream.</summary>
+/// <param name="os">Output stream.</param>
+/// <param name="_Matrix">Matrix 3x3 to convert and push to the out stream.</param>
 /// <returns>Out stream.</returns>
 AERO_CORE_EXPORT std::ostream& operator<<( std::ostream& os, const ae::Matrix3x3& _Matrix );
 

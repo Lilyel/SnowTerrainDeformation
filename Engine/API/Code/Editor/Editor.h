@@ -23,6 +23,7 @@
 namespace ae
 {
 	class Texture2D;
+	class WorldObject;
 
     /// \ingroup editor
     /// <summary>
@@ -133,6 +134,11 @@ namespace ae
     private:
         /// <summary>Show the interface for the outliner (objects hiearchy).</summary>
         void ShowOutliner();
+
+		/// <summary>Show the world object in the outliner and call the function for its children if there are.</summary>
+		/// <param name="_Object">The object to show in the outliner.</param>
+		/// <param name="_UIFlags">ImGui Flags.</param>
+		void ShowOutlinerObject( WorldObject* _Object, Int32 _UIFlags );
 
         /// <summary>Show the interface to see and edit the current selected object.</summary>
         void ShowDetails();
