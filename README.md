@@ -45,4 +45,4 @@ The scene should be composed of several objects :
 
 ## Implementation details
 
-You can find the detailed explanation [here](http://www.remimaigne.com/volume-preserving-deformation-of-terrain-in-real-time/).
+You can find the detailed explanation [here](https://lilyel.github.io/Website/perso/snow.html).
