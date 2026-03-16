@@ -2,7 +2,7 @@
 
  OpenGL implementation of Jesper Persson master thesis : __Volume-Preserving Deformation of Terrain in Real-Time__.
 
-Link to paper : http://www.diva-portal.org/smash/get/diva2:1333403/FULLTEXT01.pdf
+Link to paper : https://raw.githubusercontent.com/jesper-persson/master-thesis/master/Report.pdf
 
 ## Requirement
 
